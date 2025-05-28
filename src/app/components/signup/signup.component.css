@@ -1,0 +1,32 @@
+.card-custom {
+  border-radius: 1rem;
+}
+
+.input-custom {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.input-custom:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.9);
+  border-color: #007bff;
+}
+
+.title-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.btn-custom {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.bg-primary{
+background-color: rgb(152, 208, 197) !important;
+}
+.btn{
+  background-color: rgb(152, 208, 197) !important;
+}

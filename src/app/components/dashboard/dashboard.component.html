@@ -1,0 +1,29 @@
+<!-- Main Dashboard Content -->
+<div class="container mt-4 flex-grow-1">
+
+  <!-- Show only when on /dashboard -->
+  <div  class="row align-items-center">
+    <!-- *ngIf="showWelcomeSection" -->
+    <!-- Left side: Welcome text -->
+    <div class="col-md-6">
+      <div class="p-2 border border-primary rounded shadow-sm bg-white text-primary"
+        style="margin-right: 154px; border-width: 5px; border-style: solid;">
+        <h1>Welcome to Demo</h1>
+        <p>This is a simple Angular Project.</p>
+      </div>
+    </div>
+
+    <!-- Right side: GIF -->
+    <div class="col-md-6 text-center">
+      <img src="Money transfer.gif" alt="Welcome" class="img-fluid" style="max-height: 600px; border-radius: 30px;">
+    </div>
+  </div>
+
+  <!-- Router outlet loads user/emp or other views -->
+  <!-- <div class="app-wrapper d-flex flex-column min-vh-70">
+    <router-outlet></router-outlet>
+  </div> -->
+</div>
+
+
+<!-- Footer -->

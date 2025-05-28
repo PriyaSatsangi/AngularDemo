@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "5efc",
+      "name": "Prem Satsangi",
+      "email": "prem@gmail.com",
+      "password": "Test#321",
+      "isAggreee": false
+    },
+    {
+      "id": "8c5f",
+      "name": "Sneha Satsangi",
+      "email": "sneha@gmail.com",
+      "password": "Test#321",
+      "isAggreee": false
+    },
+    {
+      "id": "cc14",
+      "name": "Ankan Debb",
+      "email": "ankan@gmail.com",
+      "password": "Test#321",
+      "isAggreee": false
+    },
+    {
+      "id": "ee32",
+      "name": "Priya Satsangi",
+      "email": "psatsangi09@gmail.com",
+      "password": "Test#321",
+      "isAggreee": false
+    },
+    {
+      "id": "f005",
+      "name": "Vikas Khanna",
+      "email": "vikas@gmail.com",
+      "password": "Test#321",
+      "isAggreee": false
+    }
+  ]
+}

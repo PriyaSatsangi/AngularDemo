@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+  <a class="navbar-brand" routerLink="/dashboard">Home</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          routerLink="/about">
+          About
+        </a>
+        <!-- <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+          <li><a class="dropdown-item" routerLink="/home1">Home 1</a></li>
+          <li><a class="dropdown-item" routerLink="/home2">Home 2</a></li>
+        </ul> -->
+      </li>
+
+
+      <li class="nav-item dropdown me-3"> <!--  User Module  dropdown-toggle -->
+        <a class="nav-link " href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" routerLink="/user">User
+        </a>
+      </li>
+
+      <li class="nav-item dropdown me-3"> <!--  User Module -->
+        <a class="nav-link " href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" routerLink="/userwithjson">CrudWith Json
+        </a>
+      </li>
+    </ul>
+
+    <!-- <span class="navbar-text mx-auto text-white fs-4"> This is Dashboard </span> -->
+
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <button class="btn btn-outline-light" (click)="logout()">
+          🚪 Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

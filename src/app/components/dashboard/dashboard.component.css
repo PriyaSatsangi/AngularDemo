@@ -1,0 +1,42 @@
+.message-box {
+  border: 10px solid #0d6efd; /* Bootstrap primary blue */
+  background-color: white;
+  color: #0d6efd;
+  border-radius: 15px; /* optional: rounded corners */
+}
+
+.img-fluid {
+  max-height: 600px;
+  border-radius: 30px; /* curved edges, adjust for roundness */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideInRight 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateX(100px); /* start a bit off-screen */
+}
+
+/* Animation keyframes */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); /* off-screen to the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* come to normal position */
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+

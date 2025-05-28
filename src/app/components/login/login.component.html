@@ -1,0 +1,59 @@
+<div
+  class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light"
+>
+  <div class="row w-75 shadow rounded overflow-hidden card-custom">
+    <!-- Login Section -->
+    <div class="col-md-6 bg-white p-5 rounded-start">
+      <img src="logo.png" alt="Logo" style="width: 145px; height: 90px;" class="mb-3" />
+      <h2 class="mb-4 text-center title-font">Login</h2>
+      <form (ngSubmit)="login()" class="needs-validation" novalidate>
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            [(ngModel)]="email"
+            name="email"
+            class="form-control input-custom"
+            required
+          />
+        </div>
+        <div class="form-group mb-4">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            class="form-control input-custom"
+            required
+          />
+        </div>
+        <button class="btn btn-primary w-100 btn-custom" type="submit">
+          Login
+        </button>
+      </form>
+    </div>
+
+    <!-- Signup Section -->
+    <div
+      class="col-md-6 bg-primary text-white d-flex flex-column justify-content-center p-5 rounded-end"
+      style="
+    background: url('sideimageoflogin.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5); /* adds semi-dark overlay for contrast */
+  "
+    >
+      <h2 class="mb-4 text-center title-font">New Here?</h2>
+      <p class="text-center fs-5">Sign up and discover.</p>
+      <button
+        class="btn btn-light text-primary mt-3 p-2 px-2 align-self-center btn-custom"
+        (click)="goToSignup()"
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
+</div>
