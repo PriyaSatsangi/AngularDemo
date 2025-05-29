@@ -14,18 +14,4 @@ export const routes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'userwithjson', component: UserWithJsonComponent },
   { path: 'dashboard', component: DashboardComponent }
-  
-  // {
-  //   path: 'dashboard',
-  //   component: DashboardComponent,
-  //   children: [
-  //     { path: 'about', component: AboutComponent },
-  //     { path: 'user', component: UserComponent },
-  //     { path: 'userwithjson', component: UserWithJsonComponent },
-  //     // You can add more dashboard children like:
-  //     // { path: 'profile', component: ProfileComponent },
-  //   ],
-  // }
-  // { path: 'dashboard', component: DashboardComponent }, 
-  // { path: 'user', component: UserComponent }
 ];
