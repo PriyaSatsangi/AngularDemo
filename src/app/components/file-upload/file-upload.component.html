@@ -1,0 +1,49 @@
+<div class="container mt-4">
+    <div class="card shadow-sm border-primary">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><i class="fas fa-upload me-2"></i>Upload Files</h5>
+        </div>
+        <div class="card-body">
+            <div class="mb-4">
+                <label class="form-label fw-bold text-primary">Upload File 1</label>
+                <input type="file" class="form-control" (change)="handleFileInput($event, 1)" />
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-bold text-primary">Upload File 2</label>
+                <input type="file" class="form-control" (change)="handleFileInput($event, 2)" />
+            </div>
+
+            <div class="text-center mt-3" *ngIf="file1Content && file2Content">
+                <button class="btn btn-outline-primary me-2" (click)="showMatched()">
+                    <i class="fas fa-check-circle me-1"></i> Show Matched Lines
+                </button>
+                <button class="btn btn-outline-primary" (click)="showUnmatched()">
+                    <i class="fas fa-times-circle me-1"></i> Show Unmatched Lines
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayMode" class="mt-4">
+        <div class="card border-primary">
+            <div class="card-header" [ngClass]="{
+          'bg-success text-white': displayMode === 'match',
+          'bg-danger text-white': displayMode === 'unmatch'
+        }">
+                <h6 class="mb-0">
+                    <i class="me-2" [ngClass]="{
+              'fas fa-check-circle': displayMode === 'match',
+              'fas fa-times-circle': displayMode === 'unmatch'
+            }"></i>
+                    {{ displayMode === 'match' ? 'Matched Lines' : 'Unmatched Lines' }}
+                </h6>
+            </div>
+            <div class="card-body">
+                <pre class="text-wrap" *ngFor="let line of displayMode === 'match' ? matchedLines : unmatchedLines">
+{{ line }}
+        </pre>
+            </div>
+        </div>
+    </div>
+</div>

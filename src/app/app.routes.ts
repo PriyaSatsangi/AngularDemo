@@ -5,6 +5,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UserComponent } from './components/user/user.component';
 import { UserWithJsonComponent } from './components/user-with-json/user-with-json.component';
 import { AboutComponent } from './components/about/about.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'user', component: UserComponent },
   { path: 'userwithjson', component: UserWithJsonComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'fileupload', component: FileUploadComponent }
 ];
